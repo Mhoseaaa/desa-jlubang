@@ -4,7 +4,18 @@ Frontend Next.js ini sudah bisa berjalan penuh tanpa WordPress (otomatis memakai
 
 ## 1. Install WordPress
 
-Gunakan hosting apa saja yang mendukung WordPress (Hostinger, Niagahoster, dll), atau jalankan secara lokal untuk pengembangan.
+Pilih hosting apa saja yang mendukung WordPress (mis. Hostinger, Niagahoster, Rumahweb, DomaiNesia — hampir semua hosting Indonesia punya paket ini). Yang dibutuhkan:
+
+- Paket hosting yang mencantumkan "WordPress" / "1-Click WordPress Install" (biasanya paket termurah sudah cukup untuk situs desa skala kecil).
+- Domain — bisa pakai domain baru (mis. `desajlubangpacitan.id` atau `.com`), atau subdomain gratis bawaan hosting untuk mulai (mis. `namaanda.hostingerapp.com`) sambil belum beli domain sendiri. WordPress di sini hanya jadi "dapur" data — pengunjung situs tetap mengakses lewat domain Vercel (`desa-jlubang.vercel.app`), jadi domain WordPress tidak perlu cantik/mudah diingat.
+
+Langkah umum di hampir semua hosting (nama menu bisa sedikit berbeda):
+
+1. Login ke **hPanel**/**cPanel** hosting Anda.
+2. Cari menu **"Website"** atau **"Auto Installer"** → pilih **WordPress**.
+3. Isi judul situs (mis. "Portal Desa Jlubang"), buat username & password admin (catat baik-baik — ini akun `wp-admin` Anda nanti), pilih domain/subdomain tujuan instalasi.
+4. Klik **Install** — biasanya selesai dalam 1-5 menit.
+5. Setelah selesai, Anda akan mendapat link untuk login ke `https://domain-anda.com/wp-admin`.
 
 ## 2. Install plugin yang dibutuhkan
 
