@@ -36,7 +36,7 @@ export default async function GaleriPage({ searchParams }: GaleriPageProps) {
             Galeri Foto
           </h1>
           <p className="text-white/80 text-base sm:text-lg max-w-2xl mx-auto">
-            Dokumentasi keindahan alam, budaya, dan kehidupan warga Dusun Wonodadi
+            Dokumentasi keindahan alam, budaya, dan kehidupan warga Desa Jlubang
           </p>
         </div>
       </section>

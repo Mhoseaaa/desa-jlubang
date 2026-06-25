@@ -33,8 +33,9 @@ export const SITE_CONFIG = {
     'UMKM desa',
     'wisata desa',
     'kebudayaan desa',
-    'Dusun Citro',
-    'Dusun Wonodadi',
+    'Dusun Citrowonodadi',
+    'Pringkuku',
+    'Pacitan',
   ],
 };
 
@@ -53,43 +54,45 @@ export const REVALIDATE_INTERVAL = 60;
 export const DESA_PROFILE: DesaProfile = {
   name: 'Desa Jlubang',
   tagline: 'Desa Maju, Mandiri, Berbudaya',
-  description: 'Desa Jlubang merupakan desa yang terletak di wilayah Kabupaten Blitar, Jawa Timur. Desa ini terdiri dari beberapa dusun yang masing-masing memiliki keunikan budaya, potensi wisata, dan UMKM unggulan.',
-  history: `Desa Jlubang memiliki sejarah panjang yang erat kaitannya dengan perkembangan peradaban di wilayah Blitar. Nama "Jlubang" berasal dari bahasa Jawa yang menggambarkan kondisi geografis desa yang subur dan kaya akan sumber air.
+  description: 'Desa Jlubang merupakan desa yang terletak di Kecamatan Pringkuku, Kabupaten Pacitan, Jawa Timur. Portal ini berfokus menampilkan Dusun Citrowonodadi beserta potensi budaya, wisata, dan UMKM-nya.',
+  history: `Desa Jlubang terletak di Kecamatan Pringkuku, Kabupaten Pacitan, Jawa Timur — wilayah yang dikenal dengan kontur perbukitan dan kekayaan alamnya, termasuk gua alami Goa Jaran yang menjadi salah satu daya tarik wisata di desa ini.
 
-Sejak zaman dahulu, masyarakat Desa Jlubang hidup dengan semangat gotong royong dan kekeluargaan yang kuat. Tradisi dan budaya lokal terus dijaga dan dilestarikan hingga saat ini.
+Salah satu dusun di Desa Jlubang, Citrowonodadi, terbentuk dari dua area permukiman: bagian selatan sebagai permukiman utama (Citro) dan bagian utara sebagai permukiman yang berkembang lebih kemudian (Wonodadi). Kedua area ini kini menyatu sebagai satu wilayah dusun.
 
-Desa ini terus berkembang menjadi desa yang maju dengan tetap menjaga kearifan lokal dan nilai-nilai budaya yang menjadi identitasnya.`,
+Sejak dahulu, masyarakat Desa Jlubang hidup dengan semangat gotong royong dan kekeluargaan yang kuat. Tradisi dan budaya lokal terus dijaga dan dilestarikan hingga saat ini.`,
   vision: 'Mewujudkan Desa Jlubang yang maju, mandiri, sejahtera, dan berbudaya berbasis potensi lokal serta berwawasan digital.',
   mission: [
     'Meningkatkan kualitas sumber daya manusia melalui pendidikan dan pelatihan',
     'Mengembangkan potensi ekonomi lokal melalui pemberdayaan UMKM',
-    'Melestarikan budaya dan kearifan lokal setiap dusun',
+    'Melestarikan budaya dan kearifan lokal Dusun Citrowonodadi',
     'Mengembangkan potensi wisata desa secara berkelanjutan',
     'Meningkatkan infrastruktur dan pelayanan publik',
     'Mewujudkan tata kelola pemerintahan desa yang transparan dan akuntabel',
   ],
   address: 'Desa Jlubang',
-  district: 'Sanan Kulon',
-  regency: 'Blitar',
+  district: 'Pringkuku',
+  regency: 'Pacitan',
   province: 'Jawa Timur',
-  postalCode: '66171',
-  phone: '(0342) 123-4567',
+  postalCode: '63552',
+  phone: '(0357) 123-4567',
   email: 'desajlubang@gmail.com',
   headName: 'Bpk. Suharto',
   headTitle: 'Kepala Desa Jlubang',
-  latitude: -8.08,
-  longitude: 112.14,
+  // Approximate village-level coordinate (geocoded via OpenStreetMap Nominatim for "Jlubang, Pacitan").
+  // TODO: replace with the precise Kantor Desa pin once available.
+  latitude: -8.209,
+  longitude: 111.0062,
   socialMedia: {
     facebook: 'https://facebook.com/desajlubang',
     instagram: 'https://instagram.com/desajlubang',
     youtube: 'https://youtube.com/@desajlubang',
   },
   stats: {
-    population: 6500,
-    area: '12.5 km²',
-    dusun: 2,
-    rt: 24,
-    rw: 8,
+    population: 3200,
+    area: '6.2 km²',
+    dusun: 1,
+    rt: 12,
+    rw: 4,
     elevation: '200 mdpl',
   },
 };

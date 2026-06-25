@@ -23,7 +23,7 @@ Buka **Settings → Permalinks** lalu klik **Save Changes** (tanpa mengubah apap
 ## 4. Isi data, urutan yang disarankan
 
 1. **Profil Desa** (menu tersendiri) — isi nama desa, sejarah, visi/misi, kontak, statistik.
-2. **Dusun** — tambahkan setiap dusun (Citro, Wonodadi, dst). Field lain (UMKM/Wisata/Kebudayaan/Galeri) merujuk ke Dusun, jadi isi ini dulu.
+2. **Dusun** — tambahkan dusun yang sudah ada (mis. Citrowonodadi), atau dusun lain jika nanti ditambahkan. Field lain (UMKM/Wisata/Kebudayaan/Galeri) merujuk ke Dusun, jadi isi ini dulu.
 3. **Pemerintahan** — satu entri per pejabat (Kepala Desa, Sekretaris, tiap Kepala Dusun, dst). Nama pejabat = judul (title) post, foto = featured image.
 4. **UMKM**, **Wisata**, **Kebudayaan**, **Galeri**, **Agenda** — isi sesuai kebutuhan, masing-masing punya field "Dusun" untuk relasi (kecuali Agenda, yang berlaku untuk seluruh desa).
 
@@ -45,4 +45,4 @@ Buka di browser: `https://domain-wordpress-anda.com/wp-json/wp/v2/dusun` — har
 
 ## Catatan keamanan
 
-Plugin ini mengizinkan akses CORS dari semua origin (`Access-Control-Allow-Origin: *`) supaya domain Vercel Anda bisa membaca REST API. Setelah domain produksi Anda tetap, sebaiknya ganti `*` di bagian bawah `portal-desa-jlubang.php` dengan domain spesifik Anda, misalnya `https://wonodadi.vercel.app`, untuk keamanan lebih baik.
+Plugin ini hanya mengizinkan akses CORS dari domain yang didaftarkan di `$allowed_origins` (bagian bawah `portal-desa-jlubang.php`) — saat ini `https://desa-jlubang.vercel.app` dan `http://localhost:3000`. Jika domain produksi Anda berubah, atau Anda menambah custom domain, tambahkan ke daftar tersebut.

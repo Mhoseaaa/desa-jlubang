@@ -8,10 +8,10 @@ import { POSTS_PER_PAGE } from '@/lib/constants';
 
 export const metadata: Metadata = {
   title: 'Berita',
-  description: 'Berita terbaru dari Dusun Wonodadi — informasi pembangunan, budaya, dan kegiatan warga.',
+  description: 'Berita terbaru dari Desa Jlubang — informasi pembangunan, budaya, dan kegiatan warga.',
   openGraph: {
-    title: 'Berita Dusun Wonodadi',
-    description: 'Berita dan informasi terkini dari Dusun Wonodadi.',
+    title: 'Berita Desa Jlubang',
+    description: 'Berita dan informasi terkini dari Desa Jlubang.',
   },
 };
 
@@ -84,7 +84,7 @@ export default function BeritaPage(props: BeritaPageProps) {
             Berita Dusun
           </h1>
           <p className="text-white/80 text-base sm:text-lg max-w-2xl mx-auto">
-            Informasi terkini seputar kegiatan dan pembangunan Dusun Wonodadi
+            Informasi terkini seputar kegiatan dan pembangunan Desa Jlubang
           </p>
         </div>
       </section>

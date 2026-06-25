@@ -1,7 +1,7 @@
 <?php
 /**
  * Plugin Name: Portal Desa Jlubang — Content API
- * Description: Registers the Custom Post Types, ACF fields, and REST routes that the Next.js frontend (wonodadi-web) expects. Requires the free "Advanced Custom Fields" plugin to be installed and active.
+ * Description: Registers the Custom Post Types, ACF fields, and REST routes that the Next.js frontend (github.com/Mhoseaaa/desa-jlubang) expects. Requires the free "Advanced Custom Fields" plugin to be installed and active.
  * Version: 1.0.0
  * Author: Tim KKN Desa Jlubang
  */
@@ -164,7 +164,7 @@ add_action('acf/init', function () {
         'key' => 'group_pemerintahan', 'title' => 'Detail Pejabat', 'show_in_rest' => 1,
         'location' => [[['param' => 'post_type', 'operator' => '==', 'value' => 'pemerintahan']]],
         'fields' => [
-            ['key' => 'field_pemerintahan_role', 'name' => 'role', 'label' => 'Jabatan', 'type' => 'text', 'required' => 1, 'placeholder' => 'contoh: Kepala Desa, Kepala Dusun Citro'],
+            ['key' => 'field_pemerintahan_role', 'name' => 'role', 'label' => 'Jabatan', 'type' => 'text', 'required' => 1, 'placeholder' => 'contoh: Kepala Desa, Kepala Dusun Citrowonodadi'],
             ['key' => 'field_pemerintahan_period', 'name' => 'period', 'label' => 'Periode Jabatan', 'type' => 'text', 'placeholder' => 'contoh: 2024–2030'],
         ],
     ]);
@@ -287,9 +287,14 @@ add_action('rest_api_init', function () {
 add_action('rest_api_init', function () {
     remove_filter('rest_pre_serve_request', 'rest_send_cors_headers');
     add_filter('rest_pre_serve_request', function ($value) {
-        // Replace '*' with your exact frontend origin(s) once known, e.g.
-        // 'https://wonodadi.vercel.app', for tighter security.
-        header('Access-Control-Allow-Origin: *');
+        $allowed_origins = [
+            'https://desa-jlubang.vercel.app',
+            'http://localhost:3000',
+        ];
+        $origin = isset($_SERVER['HTTP_ORIGIN']) ? $_SERVER['HTTP_ORIGIN'] : '';
+        if (in_array($origin, $allowed_origins, true)) {
+            header('Access-Control-Allow-Origin: ' . $origin);
+        }
         header('Access-Control-Allow-Methods: GET');
         return $value;
     });
