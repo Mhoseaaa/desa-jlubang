@@ -95,15 +95,15 @@
    ======================================================== */
 :root {
   --bg-primary: #ffffff;
-  --bg-secondary: #f0f7ff;
+  --bg-secondary: #f8fafc;
   --bg-card: #ffffff;
-  --bg-glass: rgba(255, 255, 255, 0.8);
+  --bg-glass: rgba(255, 255, 255, 0.9);
   --text-primary: #0f172a;
   --text-secondary: #475569;
   --text-muted: #94a3b8;
-  --border-color: #dbeafe;
-  --shadow-color: rgba(37, 99, 235, 0.08);
-  --navbar-bg: #1d4ed8;
+  --border-color: #e2e8f0;
+  --shadow-color: rgba(0, 0, 0, 0.06);
+  --navbar-bg: #ffffff;
   --hero-overlay: rgba(0, 0, 0, 0.45);
 }
 
@@ -115,9 +115,9 @@
   --text-primary: #f1f5f9;
   --text-secondary: #94a3b8;
   --text-muted: #64748b;
-  --border-color: #1e3a8a;
+  --border-color: #334155;
   --shadow-color: rgba(0, 0, 0, 0.3);
-  --navbar-bg: #1e3a8a;
+  --navbar-bg: #1e293b;
   --hero-overlay: rgba(0, 0, 0, 0.6);
 }
 
