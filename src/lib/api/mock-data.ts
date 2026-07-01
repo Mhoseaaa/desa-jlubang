@@ -48,7 +48,7 @@ export const mockNews: NewsArticle[] = [
   },
   {
     id: 2, slug: 'pelatihan-umkm-digital', title: 'Pelatihan Digital Marketing untuk 50 Pelaku UMKM Desa Jlubang',
-    excerpt: 'Pelaku UMKM dari seluruh dusun mengikuti pelatihan digital marketing bekerja sama dengan Dinas Koperasi Kabupaten Blitar.',
+    excerpt: 'Pelaku UMKM dari seluruh dusun mengikuti pelatihan digital marketing bekerja sama dengan Dinas Koperasi Kabupaten Pacitan.',
     content: `<p>Sebanyak 50 pelaku UMKM dari seluruh dusun di Desa Jlubang mengikuti pelatihan digital marketing. Pelatihan ini bertujuan meningkatkan kemampuan pemasaran online.</p><p>Materi meliputi pengelolaan media sosial, fotografi produk, dan strategi penjualan di marketplace.</p>`,
     date: '2026-06-18T10:00:00', imageUrl: 'https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=800&q=80', imageAlt: 'Pelatihan UMKM Digital', category: 'UMKM', author: 'Admin Desa',
   },

@@ -1,4 +1,4 @@
-import type { NavigationItem, DesaProfile } from '@/types/content';
+import type { NavigationItem, DesaProfile, ApbDes } from '@/types/content';
 
 /* ========================================================
    Navigation — Portal Desa Jlubang
@@ -89,12 +89,31 @@ Sejak dahulu, masyarakat Desa Jlubang hidup dengan semangat gotong royong dan ke
   },
   stats: {
     population: 3200,
+    male: 1620,
+    female: 1580,
+    kk: 892,
     area: '6.2 km²',
     dusun: 1,
     rt: 12,
     rw: 4,
     elevation: '200 mdpl',
   },
+};
+
+/* ========================================================
+   APBDes (Village Budget) — TA 2026
+   ======================================================== */
+export const APBDES: ApbDes = {
+  year: 2026,
+  pendapatan: 1_250_000_000,
+  belanja: 1_150_000_000,
+  pembiayaan: 0,
+  surplus: 100_000_000,
+  sumberDana: [
+    { label: 'Dana Desa', nilai: 850_000_000 },
+    { label: 'ADD', nilai: 280_000_000 },
+    { label: 'PADes', nilai: 120_000_000 },
+  ],
 };
 
 /* ========================================================
@@ -110,9 +129,9 @@ export const MAP_CONFIG = {
 };
 
 export const MAP_CATEGORY_COLORS: Record<string, string> = {
-  dusun: '#8b5cf6',
+  dusun: '#2563eb',
   wisata: '#10b981',
-  umkm: '#f59e0b',
+  umkm: '#f97316',
 };
 
 export const MAP_CATEGORY_LABELS: Record<string, string> = {

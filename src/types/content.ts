@@ -30,11 +30,23 @@ export interface DesaProfile {
 
 export interface DesaStats {
   population: number;
+  male: number;
+  female: number;
+  kk: number;
   area: string;
   dusun: number;
   rt: number;
   rw: number;
   elevation: string;
+}
+
+export interface ApbDes {
+  year: number;
+  pendapatan: number;
+  belanja: number;
+  pembiayaan: number;
+  surplus: number;
+  sumberDana: { label: string; nilai: number }[];
 }
 
 export interface SocialMedia {
